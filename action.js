@@ -20,7 +20,9 @@ function modifyNum(number) {
 }
 
 function fizzbuzz() {
-    console.log(document.querySelector('#fizzbuzz-input').value);
+    console.log(document.querySelector('fizzbuzz-input').value);
+    while(i = 5)
+    do
     //you'll want to look up
     //javascript loops (either while, or for will work well here)
     //conditionals (if, elseif, else) or switch statements
@@ -29,5 +31,3 @@ function fizzbuzz() {
 
 function calculator(value) {
 }
-let name='Ahmad'
-console.log(name);
