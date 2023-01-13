@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Counter</h2>
+        <div id="count">0</div>
+        <button onclick="modifyNum(1)">Increment</button>
+        <button onclick="modifyNum(-1)">Decrement</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <div class="container">
+        <h2>FizzBuzz</h2>
+        <input type="number" name="fizzbuzz-input" id="fizzbuzz-input">
+        <button onclick="fizzbuzz()">Fizzbuzz!</button>
+        <div id="fizzbuzz-output">
+            <!-- a placeholder div to print your output -->
+        </div>
+    </div>
+    <script src="action.js"></script>
+    
+</body>
+</html>
