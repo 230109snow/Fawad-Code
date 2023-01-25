@@ -1,0 +1,52 @@
+<h2>Add Activity</h2>
+<div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> Activity Added.
+    <button (click)="removeMessage()" type="button" data-bs-dismiss="alert" aria-label="Close">X</button>
+  </div>
+<form [formGroup]="addTodoList" (ngSubmit)="saveData()">
+    <div class="mb-12">
+      <label class="form-label">Activity</label>
+      &nbsp;
+      <input type="text" class="form-control" class="col-xs-12" placeholder="Enter Activity" formControlName="Todo">
+      &nbsp;
+      &nbsp;
+
+      <label class="form-label">Fram</label>
+      &nbsp;
+      <input type="time" class="form-control" class="col-xs-4" formControlName="timeStart">
+      &nbsp;
+      &nbsp;
+
+      <label class="form-label">To</label>
+      &nbsp;
+      <input type="time" class="form-control" class="col-xs-4" formControlName="timeEnd">
+      &nbsp;
+      &nbsp;
+
+      <label class="form-label">Date</label>
+      &nbsp;
+      <input type="date" class="form-control" class="col-xs-4" formControlName="date">
+      &nbsp;
+      &nbsp;
+      <label class="form-label">Status</label>
+      &nbsp;
+      <!-- <input type="text" class="form-control" class="col-xs-4" placeholder="Enter Status" formControlName="status">
+      -->
+      <select class="col-xs-4" placeholder="Enter Status" formControlName="status">
+        <optgroup label="Activity Status">
+          <option value="Completed">Completed</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Not Started">Not Started</option>
+      </select>
+      <br><br>
+
+
+
+
+
+
+
+
+    </div>
+    <button type="submit" class="btn btn-primary">Add Activity</button>
+  </form>

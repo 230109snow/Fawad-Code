@@ -39,3 +39,6 @@ let employee: {
     name: string
 } = {id: 1, name: 'Ahmad'}
 
+const costOfScrin = 34;
+console.log(costOfScrin);
+

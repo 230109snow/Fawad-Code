@@ -1,0 +1,48 @@
+<h3>update Activity</h3>
+<div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong> List Updated.
+  <button (click)="removeMessage()" type="button" data-bs-dismiss="alert" aria-label="Close"><i class="fa fa-window-close-o" aria-hidden="true"></i></button>
+</div>
+<form [formGroup]="editodoList" (ngSubmit)="updateData()">
+  <div class="mb-3">
+    <label class="form-label">Todo</label>
+    &nbsp;
+    <input type="text" class="form-control" class="col-xs-4" placeholder="Enter Todo" formControlName="Todo">
+    &nbsp;
+    &nbsp;
+    <label class="form-label">Enter Start Time</label>
+    &nbsp;
+    <input type="time" class="form-control" class="col-xs-4" placeholder="Enter Start Time" formControlName="timeStart">
+    &nbsp;
+    &nbsp;
+
+    <label class="form-label">Enter End Time</label>
+    &nbsp;
+    <input type="time" class="form-control" class="col-xs-4" placeholder="Enter End Time" formControlName="timeEnd">
+    &nbsp;
+    &nbsp;
+
+    <label class="form-label">Enter Date</label>
+    &nbsp;
+    <input type="date" class="form-control" class="col-xs-4" formControlName="date">
+    &nbsp;
+    &nbsp;
+
+
+    <label class="form-label">Enter status</label>
+     <!-- <input type="text" class="form-control" class="col-xs-4" placeholder="Enter Status" formControlName="status">
+    -->
+    &nbsp;
+
+    <select class="col-xs-4" placeholder="Enter Status" formControlName="status">
+      <optgroup label="Activity Status">
+        <option value="Completed">Completed</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Not Started">Not Started</option>
+    </select>
+
+
+
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

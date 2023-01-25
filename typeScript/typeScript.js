@@ -36,3 +36,5 @@ function calculaterTax(income, taxYar) {
 //colculateTax(10_000);
 // object
 let employee = { id: 1, name: 'Ahmad' };
+const costOfScrin = 34;
+console.log(costOfScrin);
